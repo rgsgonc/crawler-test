@@ -114,12 +114,11 @@ class Instagram {
                 caption = post.edge_media_to_caption.edges[0].node.text;
             }
 
+             
             let likes = post.edge_liked_by;
-
             let comments = post.edge_media_to_comment;
-
             let video = post.is_video;
-
+            
             let mentions = caption && caption.length != 0 && caption.match(/@[A-Za-z0-9._-]*/g) || null;
             
             let postObj = {
@@ -131,7 +130,7 @@ class Instagram {
                 idPublicacao: post.id,
                 likes: likes,
                 comments: comments,
-                video : video
+                video : video,
             };
 
             if (mentions) {
