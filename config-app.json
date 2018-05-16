@@ -1,0 +1,21 @@
+{
+    "browser": {
+        "ignoreArgs": false,
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50 Safari/537.36",
+        "language": "pt-BR",
+        "name": "phantomjs",
+        "isHeadless": false
+    },
+    "screenshot": {
+        "path": "screenshots",
+        "timeToDelete": {
+            "amount": 2,
+            "time": "weeks"
+        }
+    },
+    "timeout": {
+        "elementLocated": 10000
+    },
+    "logLevel": "info",
+    "cookiesPath": "/tmp/crawler-test/cookies"
+}
